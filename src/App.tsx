@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import {
-  BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom';
@@ -17,7 +16,7 @@ import {Footer} from "./components/Footer/Footer";
 
 function App() {
   return (
-    <Router>
+    <div>
       <Header/>
       <Menu/>
       <Switch>
@@ -28,7 +27,7 @@ function App() {
         <Route path="/" component={AllRecipes}/>
       </Switch>
       <Footer/>
-    </Router>
+    </div>
   );
 }
 
